@@ -17,4 +17,7 @@
     <string name="div">/</string>
     <string name="equals">=</string>
     <string name="dot">.</string>
+    <string name="leftP">(</string>
+    <string name="rightP">)</string>
+    <string name="del">Del</string>
 </resources>
