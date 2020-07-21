@@ -1,8 +1,6 @@
 package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.VoiceInteractor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -275,7 +273,21 @@ public class MainActivity extends AppCompatActivity {
                   double roundOff = Double.parseDouble(mathExpression.solve());
                   double value = Math.floor(roundOff*10000)/10000d;
                   ResultText.setText(query);
-                  QueryText.setText(String.valueOf(value));
+
+                  String ans = String.valueOf(value);
+                  int len = ans.length();
+
+                  if(ans.charAt(len-1) =='0' && ans.charAt(len-2) == '.'){
+                     ans = ans.substring(0,len-2);
+                     QueryText.setText(ans);
+                     QueryText.setTextSize(35);
+                  }
+
+                  else {
+                     QueryText.setText(String.valueOf(value));
+                     QueryText.setTextSize(35);
+                  }
+
                }
             }
 
