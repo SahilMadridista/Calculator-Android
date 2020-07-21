@@ -43,6 +43,7 @@
                 android:layout_centerInParent="true"
                 android:gravity="center_vertical|end"
                 android:textSize="30sp"
+                android:id="@+id/query_text"
                 android:textColor="@color/colorPrimaryDark"
                 android:paddingStart="0dp"
                 android:paddingEnd="20dp"

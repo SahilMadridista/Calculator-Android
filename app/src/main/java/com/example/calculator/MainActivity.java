@@ -4,15 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
    Button zero,one,two,three,four,five,six,seven,eight,nine,dot,all_clear,add,sub,multi,div,equals;
+   TextView QueryText;
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_main);
+
+      QueryText = findViewById(R.id.query_text);
 
       zero = findViewById(R.id.btn0);
       one = findViewById(R.id.btn1);
